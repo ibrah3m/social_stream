@@ -8622,7 +8622,7 @@ async function applyBotActions(data, tab = false) {
 		// Question identification logic
 		if (settings.identifyQuestions && data.chatmessage) {
 			// Default keywords to identify questions
-			const questionKeywords = settings.questionKeywords?.textsetting?.split(",").map(k => k.trim()) || ["?", "Q:", "question:", "Question:", "how", "what", "when", "where", "why", "who", "which", "could", "would", "should", "can", "will"];
+			const questionKeywords = settings.questionKeywords?.textsetting?.split(",").map(k => k.trim()) || ["لماذا","؟","كيف","شلون","اين","?", "Q:", "question:", "Question:", "how", "what", "when", "where", "why", "who", "which", "could", "would", "should", "can", "will"];
 			
 			// Check if message contains any question keywords
 			const messageText = data.chatmessage.toLowerCase();
